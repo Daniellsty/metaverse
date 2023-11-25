@@ -9,7 +9,7 @@ const Page = () => {
 
 return(
 
-  <div className='bg-primary-black '>
+  <div className='bg-primary-black overflow-hidden'>
     <Navbar />
     <Hero />
     <div className='relative'>
@@ -28,7 +28,7 @@ return(
     <div className='relative'>
 
     <Insights />
-    <div className='gradient-04 z-0' />
+    {/* <div className='gradient-04 z-0' /> */}
 
     <Feedback />
     </div>
