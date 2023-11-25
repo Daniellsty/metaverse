@@ -4,14 +4,15 @@ import styles from "../styles";
 import {
   slideIn,
   staggerContainer,
-  textContainer,
   textVariant,
 } from "../utils/motion";
 import Image from "next/image";
 import cover from '../public/cover.png'
 import stamp from '../public/stamp.png'
+
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6 overflow-hidden`}>
+  
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -49,17 +50,20 @@ const Hero = () => (
       />
       <a href="#explore">
         <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] relative z-10">
+        
         <Image 
       src={stamp}
       alt="cover"
       className="sm:w-[155px]  w-[100px] sm:h-[155px] h-[100px] object-contain"
       />
+      
         </div>
       </a>
   
     </motion.div>
 
     </motion.div>
+    
   </section>
 );
 
