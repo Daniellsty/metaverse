@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { Footer, Navbar } from "../components";
+import { Footer, Navbar } from '../components';
 import {
   About,
   Explore,
@@ -10,11 +10,10 @@ import {
   Insights,
   WhatsNew,
   World,
-} from "../sections";
+} from '../sections';
 
-const Page = () => {
-  return (
-    <div className="bg-primary-black overflow-hidden">
+const Page = () => (
+      <div className="bg-primary-black overflow-hidden">
       <Navbar />
       <Hero />
       <div className="relative">
@@ -37,7 +36,4 @@ const Page = () => {
       </div>
       <Footer />
     </div>
-  );
-};
-
-export default Page;
+); export default Page;
